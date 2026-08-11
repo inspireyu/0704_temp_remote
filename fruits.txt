@@ -4,3 +4,4 @@ orange
 salad
 eda19cfe33a34ac70d9f6705f3e03e0421ef5f81
 eda19cfe
+git config --global http.sslCAInfo D:/YCR-LNVCPT/Develop/CA_certificate/cacert.pem
