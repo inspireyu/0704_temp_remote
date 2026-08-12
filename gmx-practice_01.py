@@ -151,3 +151,10 @@ for i in range(1,101,2):
     num = num + i
 print(num)
 """
+
+# 九九乘法表
+for hang in range(1,10):
+    for lie in range(1,hang+1):
+        ji = lie * hang
+        print(f"{lie} * {hang} = {ji}   ", end = "")
+    print()
