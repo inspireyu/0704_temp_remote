@@ -1,0 +1,153 @@
+2026-07-25
+今天学习的内容
+
+高级语言 --编译--> 汇编语言 --汇编--> 机器语言
+Python为高级语言中的解释型语言, 运行前无需编译, 须使用解释器在运行时逐句解释, 运行速率降低, 代码灵活度提升
+
+注释(每一行#号后的内容)
+多行注释(三引号)
+
+值(value) 和 变量(variable)
+运算法则: = + - * / ** % () (除法运算自动返回浮点型变量)
+赋值: 将等号右侧的值赋给等号左侧
+
+注意使用空格和换行, 方便阅读
+换行和缩进在Python中有功能性意义, 不可省略, 并非仅为美观
+
+值和变量的 类型(class) 新学四项: int float(容量为16位有效数字) string bool(bool仅有True和False两个值)
+函数 type(obj) 返回obj的类型
+函数 isinstance(obj,class) 验证obj的类型是否为class, 是则返回True, 否则False
+值和变量的强制类型转换, 使用函数int(obt), str(obj)等
+函数 len(str) 以int类型的值返回str的字符串长度
+使用三引号实现多行字符串
+
+print函数, 逗号处默认空格, 结尾默认换行(可用print("string",end = "")更改)
+一次性输出不同的字符串与变量, 采用方式: print("string", variable)
+更好的方式: 格式化(format)输出: print(f"string{variable}")
+转义字符 新学: \n \t \' \" \\ (注意是反斜杠)
+
+
+
+2026-07-30
+今天学习的内容
+
+--完成: Practice1~5
+--完成: 梯形面积计算 或 三个输入abc的平均数计算
+
+运算: 整除
+变量类型: None
+print的sep参数: print("He", "llo", sep = "", end = "")
+
+--应用场景：如果你有 10 块钱，一瓶水 3 块，能买几瓶？剩多少钱？
+
+import库(library)
+randint函数, 隶属random库
+sleep函数, 隶属time库
+
+
+
+下节课的内容
+
+禁用提示, 禁用内联
+
+书写规范: 等号两边要空格 运算符两边要空格 :前不空格后空格 ,前不空格后空格 #后空格 不同部分换行
+import function from library
+import library as lbr
+
+条件表达式
+等号 == >= <=
+bool值False,True与0,1
+--展示: # 07 bool is 0 and 1
+逻辑 与 或 非 (and or not)
+--展示: # 08 and or not
+
+if 结构
+
+else结构
+if...else...嵌套
+
+--完成: # 09 is number odd or even?
+--完成: # 11 positive and negative number
+
+elif结构
+--完成: # 13 triangle type test
+
+简要提及match结构
+--展示: # 14 match calculation
+
+解释python的函数的运行逻辑: 输入, 计算, 输出
+
+定义 函数名(参数1):
+    语句1
+    语句2
+    变量a = 参数1 + 1
+
+    返回 变量a
+
+ss = 1
+num1 = 函数名(ss)
+
+
+
+下节课的内容
+
+for遍历循环结构
+range函数(start, stop, step)
+在循环中使用i参数
+
+--完成: # 15 plus of the odd number in 100 (一百以内奇数之和)
+--完成: # 16 multiplication table (九九乘法表)
+
+while条件循环结构
+死循环
+
+关键字break, continue, pass
+
+--完成: 猜数游戏
+
+变量类型: list(列表)
+    特点 可变, 可重复, 类型可不同, 有顺序
+    索引和反向索引(从-1开始)
+    查看, 修改, 删除 (超出索引范围将会报错)
+
+for循环遍历list
+list切片(第一个冒号不能省, 可用负索引)
+
+方法
+lst.append(item)
+lst.insert(index, item) 在index前插入item, 之后的数据向后顺延
+lst.remove(item) 移除列表中第一个匹配到的值
+lst.pop(index) / list.pop() 移除, 顺延, 无参数则默认为最后一个
+lst.sort() list中的元素须为同一类型
+lst.reverse() 翻转
+
+--完成: # 19 10 number input to list and sort
+    用户分别输入十个数字, 将其存储在一个列表中, 将列表排序, 输出其中的最小值和最大值
+
+函数sum(lst)
+函数len(lst)
+--完成: 补充输出平均值
+
+
+
+---
+正数 否
+    边长不是正数
+正数 是
+    是否可以组成三角形 否
+        边长不能组成三角形
+    是否可以组成三角形 是
+        是等边三角形吗 是
+            是等边三角形
+        是等边三角形吗 否
+            是等腰三角形吗 是
+                是直角三角形吗 是
+                    是等腰直角三角形
+                是直角三角形吗 否
+                    是等腰三角形
+            是等腰三角形吗 否
+                是直角三角形吗 是
+                    是直角三角形
+                是直角三角形吗 否
+                    不是特殊三角形
+---
