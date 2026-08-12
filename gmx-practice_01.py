@@ -153,8 +153,12 @@ print(num)
 """
 
 # 九九乘法表
+"""
 for hang in range(1,10):
     for lie in range(1,hang+1):
         ji = lie * hang
-        print(f"{lie} * {hang} = {ji}   ", end = "")
+        wei = len(str(ji))
+        print(f"{lie} * {hang} = {ji}{(4-wei)*" "}", end = "")
     print()
+"""
+
