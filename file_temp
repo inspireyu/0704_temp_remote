@@ -97,6 +97,7 @@ range函数(start, stop, step)
 
 --完成: # 15 plus of the odd number in 100 (一百以内奇数之和)
 --完成: # 16 multiplication table (九九乘法表)
+--复习: # 11 positive and negative number
 
 while条件循环结构
 死循环
